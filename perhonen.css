@@ -1,0 +1,407 @@
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  html, body {
+    margin:0;
+    width:fit-content;
+    overflow: hidden;
+  }
+  @page {
+    size: 852mm 1212mm;
+    margin: 0mm;
+  }
+  main {
+    width:846mm;
+    height:1206mm;
+    margin:3mm;
+    position:relative;
+  }
+  .poster-content {
+    width:100%;
+    height:100%;
+  }
+  .cropmark, .cropmark:after {
+    position:absolute;
+    background:black;
+    outline:0.1mm solid white;
+    z-index:10000;
+  }
+  .topleft {
+    width:0.1mm;
+    height: 4mm;
+    top:-3mm;
+    left:3mm;
+  }
+  .topleft::after { 
+    content:'';
+    height:0.1mm;
+    width:4mm;
+    top:6mm;
+    left:-6mm;
+  }
+  .topright {
+    width:0.1mm;
+    height:4mm;
+    top:-3mm;
+    right:3mm;
+  }
+  .topright::after {
+    content:'';
+    height:0.1mm;
+    width:4mm;
+    top:6mm;
+    right:-6mm;
+  }
+  .bottomleft {
+  width:0.1mm;
+  height:4mm;
+  bottom:-3mm;
+  left:3mm;
+  }
+  .bottomleft::after {
+    content:'';
+    height:0.1mm;
+    width:4mm;
+    bottom:6mm;
+    left:-6mm;
+  }
+  .bottomright {
+    width:0.1mm;
+    height:4mm;
+    bottom:-3mm;
+    right:3mm;
+  }
+  .bottomright::after {
+    content:'';
+    height:0.1mm;
+    width:4mm;
+    bottom:6mm;
+    right:-6mm;
+  }
+
+  body {
+    transform-origin:0 0;
+
+  }
+
+
+  .background {
+    width:100%;
+    height:100%;
+    background-color: black;
+    background:
+              
+              linear-gradient(240deg, #508c50, rgba(0,255,0,0) 60.71%),
+              linear-gradient(0deg, #5d492f, rgba(0,0,255,0) 60.71%),
+              linear-gradient(170deg, #0a23ba, rgba(0,0,255,0) 60.71%),
+              linear-gradient(90deg, #d29aa7, rgba(255,0,0,0) 60.71%);
+
+              background: radial-gradient(#ff6200, #5d492f);
+  }
+
+
+
+.perhosmalli {
+    position: absolute;
+    right: -590px;
+    top: 1800px;
+    opacity: 50%;
+    scale: 0%;
+}
+
+
+.perhonen {
+    position: absolute;
+    div {
+        background-color: #c3e224;
+        position: absolute;
+        border-radius: 50%;
+        width: 18px;
+        background: radial-gradient(#c3e224, #cfac7f);
+    }   
+ }
+
+ .viiva1 { height: 170px; left: 380px; bottom: 4000px;}
+ .viiva2 { height: 220px; left: 400px; bottom: 3990px;}
+ .viiva3 { height: 280px; left: 420px; bottom: 3960px;}
+ .viiva4 { height: 320px; left: 440px; bottom: 3930px;}
+ .viiva5 { height: 370px; left: 460px; bottom: 3900px;}
+ .viiva6 { height: 400px; left: 480px; bottom: 3880px;}
+ .viiva7 { height: 420px; left: 500px; bottom: 3870px;}
+ .viiva8 { height: 440px; left: 520px; bottom: 3860px;}
+ .viiva9 { height: 460px; left: 540px; bottom: 3850px;}
+ .viiva10 { height: 480px; left: 560px; bottom: 3840px;}
+ .viiva11 { height: 500px; left: 580px; bottom: 3830px;}
+ .viiva12 { height: 520px; left: 600px; bottom: 3820px;}
+ .viiva13 { height: 530px; left: 620px; bottom: 3810px;}
+ .viiva14 { height: 540px; left: 640px; bottom: 3800px;}
+ .viiva15 { height: 590px; left: 660px; bottom: 3760px;}
+ .viiva16 { height: 620px; left: 680px; bottom: 3730px;}
+ .viiva17 { height: 640px; left: 700px; bottom: 3710px;}
+ .viiva18 { height: 670px; left: 720px; bottom: 3680px;}
+ .viiva19 { height: 700px; left: 740px; bottom: 3650px;}
+ .viiva20 { height: 720px; left: 760px; bottom: 3630px;}
+ .viiva21 { height: 740px; left: 780px; bottom: 3610px;}
+ .viiva22 { height: 770px; left: 800px; bottom: 3580px;}
+ .viiva23 { height: 970px; left: 820px; bottom: 3380px;}
+ .viiva24 { height: 1010px; left: 840px; bottom: 3340px;}
+ .viiva25 { height: 1050px; left: 860px; bottom: 3300px;}
+ .viiva26 { height: 1070px; left: 880px; bottom: 3280px;}
+ .viiva27 { height: 1080px; left: 900px; bottom: 3270px;}
+ .viiva28 { height: 1100px; left: 920px; bottom: 3250px;}
+ .viiva29 { height: 1470px; left: 940px; bottom: 2880px;}
+ .viiva30 { height: 1750px; left: 960px; bottom: 2600px;}
+ .viiva31 { height: 1800px; left: 980px; bottom: 2550px;}
+ .viiva32 { height: 1830px; left: 1000px; bottom: 2520px;}
+ .viiva33 { height: 1860px; left: 1020px; bottom: 2490px;}
+ .viiva34 { height: 1880px; left: 1040px; bottom: 2470px;}
+ .viiva35 { height: 1900px; left: 1060px; bottom: 2450px;}
+ .viiva36 { height: 1918px; left: 1080px; bottom: 2430px;}
+ .viiva37 { height: 1935px; left: 1100px; bottom: 2410px;}
+ .viiva38 { height: 1942px; left: 1120px; bottom: 2400px;}
+ .viiva39 { height: 1950px; left: 1140px; bottom: 2385px;}
+ .viiva40 { height: 1950px; left: 1160px; bottom: 2380px;}
+ .viiva41 { height: 1950px; left: 1180px; bottom: 2375px;}
+ .viiva42 { height: 1950px; left: 1200px; bottom: 2370px;}
+ .viiva43 { height: 1950px; left: 1220px; bottom: 2365px;}
+ .viiva44 { height: 1945px; left: 1240px; bottom: 2360px;}
+ .viiva45 { height: 1945px; left: 1260px; bottom: 2355px;}
+ .viiva46 { height: 1940px; left: 1280px; bottom: 2350px;}
+ .viiva47 { height: 1935px; left: 1300px; bottom: 2350px;}
+ .viiva48 { height: 1930px; left: 1320px; bottom: 2350px;}
+ .viiva49 { height: 1925px; left: 1340px; bottom: 2350px;}
+ .viiva50 { height: 1920px; left: 1360px; bottom: 2345px;}
+ .viiva51 { height: 1915px; left: 1380px; bottom: 2345px;}
+ .viiva52 { height: 1910px; left: 1400px; bottom: 2345px;}
+ .viiva53 { height: 1905px; left: 1420px; bottom: 2345px;}
+ .viiva54 { height: 1900px; left: 1440px; bottom: 2345px;}
+ .viiva55 { height: 1895px; left: 1460px; bottom: 2345px;}
+ .viiva56 { height: 1885px; left: 1480px; bottom: 2345px;}
+ .viiva57 { height: 1880px; left: 1500px; bottom: 2345px;}
+ .viiva58 { height: 1875px; left: 1520px; bottom: 2345px;}
+ .viiva59 { height: 1865px; left: 1540px; bottom: 2345px;}
+ .viiva60 { height: 1850px; left: 1560px; bottom: 2345px;}
+ .viiva61 { height: 1840px; left: 1580px; bottom: 2345px;}
+ .viiva62 { height: 1825px; left: 1600px; bottom: 2350px;}
+ .viiva63 { height: 1810px; left: 1620px; bottom: 2350px;}
+ .viiva64 { height: 3785px; left: 1640px; bottom: 360px;}
+ .viiva65 { height: 3775px; left: 1660px; bottom: 360px;}
+ .viiva66 { height: 3760px; left: 1680px; bottom: 360px;}
+ .viiva67 { height: 3740px; left: 1700px; bottom: 370px;}
+ .viiva68 { height: 3720px; left: 1720px; bottom: 380px;}
+ .viiva69 { height: 3700px; left: 1740px; bottom: 390px;}
+ .viiva70 { height: 3680px; left: 1760px; bottom: 400px;}
+ 
+ .viiva72 { height: 3660px; left: 1780px; bottom: 410px;}
+ .viiva73 { height: 3650px; left: 1800px; bottom: 410px;}
+ .viiva74 { height: 3640px; left: 1820px; bottom: 410px;}
+ .viiva75 { height: 3640px; left: 1840px; bottom: 400px;}
+ .viiva76 { height: 3640px; left: 1860px; bottom: 380px;}
+ .viiva77 { height: 3640px; left: 1880px; bottom: 370px;}
+ .viiva78 { height: 3650px; left: 1900px; bottom: 350px;}
+ .viiva79 { height: 3650px; left: 1920px; bottom: 330px;}
+ .viiva80 { height: 3650px; left: 1940px; bottom: 320px;}
+ .viiva81 { height: 3650px; left: 1960px; bottom: 300px;}
+ .viiva82 { height: 3650px; left: 1980px; bottom: 280px;}
+ .viiva83 { height: 3640px; left: 2000px; bottom: 280px;}
+ .viiva84 { height: 3625px; left: 2020px; bottom: 280px;}
+ .viiva85 { height: 3600px; left: 2040px; bottom: 285px;}
+ .viiva86 { height: 3570px; left: 2060px; bottom: 295px;}
+ .viiva87 { height: 3540px; left: 2080px; bottom: 305px;}
+ .viiva88 { height: 3505px; left: 2100px; bottom: 315px;}
+ .viiva89 { height: 3470px; left: 2120px; bottom: 330px;}
+ .viiva90 { height: 3430px; left: 2140px; bottom: 350px;}
+ .viiva91 { height: 3400px; left: 2160px; bottom: 365px;}
+ .viiva92 { height: 3360px; left: 2180px; bottom: 380px;}
+ .viiva93 { height: 3330px; left: 2200px; bottom: 395px;}
+ .viiva94 { height: 3295px; left: 2220px; bottom: 410px;}
+ .viiva95 { height: 3260px; left: 2240px; bottom: 425px;}
+ .viiva96 { height: 3220px; left: 2260px; bottom: 435px;}
+ .viiva97 { height: 3190px; left: 2280px; bottom: 445px;}
+ .viiva98 { height: 3160px; left: 2300px; bottom: 455px;}
+ .viiva99 { height: 3130px; left: 2320px; bottom: 465px;}
+ .viiva100 { height: 3100px; left: 2340px; bottom: 480px;}
+ .viiva101 { height: 3060px; left: 2360px; bottom: 495px;}
+ .viiva102 { height: 3025px; left: 2380px; bottom: 505px;}
+ .viiva103 { height: 2995px; left: 2400px; bottom: 515px;}
+ .viiva104 { height: 2960px; left: 2420px; bottom: 530px;}
+ .viiva105 { height: 2920px; left: 2440px; bottom: 545px;}
+ .viiva106 { height: 2880px; left: 2460px; bottom: 555px;}
+ .viiva107 { height: 2840px; left: 2480px; bottom: 570px;}
+ .viiva108 { height: 2800px; left: 2500px; bottom: 580px;}
+ .viiva109 { height: 2760px; left: 2520px; bottom: 590px;}
+ .viiva110 { height: 2720px; left: 2540px; bottom: 610px;}
+
+ .viiva112 { height: 2680px; left: 2560px; bottom: 620px;}
+ .viiva113 { height: 2640px; left: 2580px; bottom: 635px;}
+ .viiva114 { height: 2590px; left: 2600px; bottom: 650px;}
+ .viiva115 { height: 2550px; left: 2620px; bottom: 670px;}
+ .viiva116 { height: 2500px; left: 2640px; bottom: 690px;}
+ .viiva117 { height: 2450px; left: 2660px; bottom: 710px;}
+ .viiva118 { height: 2405px; left: 2680px; bottom: 730px;}
+ .viiva119 { height: 2350px; left: 2700px; bottom: 755px;}
+ .viiva120 { height: 2305px; left: 2720px; bottom: 775px;}
+ .viiva121 { height: 2240px; left: 2740px; bottom: 800px;}
+ .viiva122 { height: 2170px; left: 2760px; bottom: 840px;}
+ .viiva123 { height: 2090px; left: 2780px; bottom: 880px;}
+ .viiva124 { height: 1980px; left: 2800px; bottom: 970px;}
+ .viiva125 { height: 1870px; left: 2820px; bottom: 1040px;}
+ .viiva126 { height: 1780px; left: 2840px; bottom: 1110px;}
+ .viiva127 { height: 1690px; left: 2860px; bottom: 1160px;}
+ .viiva128 { height: 1610px; left: 2880px; bottom: 1200px;}
+ .viiva129 { height: 1530px; left: 2900px; bottom: 1240px;}
+ .viiva130 { height: 1470px; left: 2920px; bottom: 1270px;}
+ .viiva131 { height: 1430px; left: 2940px; bottom: 1290px;}
+ .viiva132 { height: 1380px; left: 2960px; bottom: 1310px;}
+ .viiva133 { height: 1325px; left: 2980px; bottom: 1340px;}
+ .viiva134 { height: 1260px; left: 3000px; bottom: 1360px;}
+ .viiva135 { height: 1210px; left: 3020px; bottom: 1375px;}
+ .viiva136 { height: 1160px; left: 3040px; bottom: 1400px;}
+ .viiva137 { height: 1110px; left: 3060px; bottom: 1430px;}
+ .viiva138 { height: 1060px; left: 3080px; bottom: 1460px;}
+ .viiva139 { height: 1170px; left: 3100px; bottom: 1370px;}
+ .viiva140 { height: 1630px; left: 3120px; bottom: 1270px;}
+ .viiva141 { height: 1730px; left: 3140px; bottom: 1210px;}
+ .viiva142 { height: 1800px; left: 3160px; bottom: 1160px;}
+ .viiva143 { height: 1820px; left: 3180px; bottom: 1150px;}
+ .viiva144 { height: 1840px; left: 3200px; bottom: 1140px;}
+
+ /*täydennykset*/
+ .viiva145 { height: 1960px; left: 1620px; bottom: 360px;}
+ .viiva146 { height: 1950px; left: 1600px; bottom: 360px;}
+ .viiva147 { height: 1920px; left: 1580px; bottom: 380px;}
+ .viiva148 { height: 1890px; left: 1560px; bottom: 400px;}
+ .viiva149 { height: 1830px; left: 1540px; bottom: 450px;}
+ .viiva150 { height: 1690px; left: 1520px; bottom: 580px;}
+ .viiva151 { height: 1640px; left: 1500px; bottom: 620px;}
+ .viiva152 { height: 1600px; left: 1480px; bottom: 650px;}
+ .viiva153 { height: 1570px; left: 1460px; bottom: 670px;}
+ .viiva154 { height: 1550px; left: 1440px; bottom: 680px;}
+ .viiva155 { height: 1530px; left: 1420px; bottom: 690px;}
+ .viiva156 { height: 1520px; left: 1400px; bottom: 690px;}
+ .viiva157 { height: 1515px; left: 1380px; bottom: 685px;}
+ .viiva158 { height: 1510px; left: 1360px; bottom: 685px;}
+ .viiva159 { height: 1490px; left: 1340px; bottom: 690px;}
+ .viiva160 { height: 1470px; left: 1320px; bottom: 700px;}
+ .viiva161 { height: 1180px; left: 1300px; bottom: 980px;}
+ .viiva162 { height: 1150px; left: 1280px; bottom: 1000px;}
+ .viiva163 { height: 1120px; left: 1260px; bottom: 1010px;}
+
+ .viiva164 { height: 140px; left: 1300px; bottom: 720px;}
+ .viiva165 { height: 100px; left: 1280px; bottom: 740px;}
+
+ .viiva166 { height: 1065px; left: 1240px; bottom: 1040px;}
+ .viiva167 { height: 1030px; left: 1220px; bottom: 1060px;}
+ .viiva168 { height: 1005px; left: 1200px; bottom: 1070px;}
+ .viiva169 { height: 970px; left: 1180px; bottom: 1090px;}
+ .viiva170 { height: 690px; left: 1160px; bottom: 1355px;}
+ .viiva171 { height: 670px; left: 1140px; bottom: 1365px;}
+ .viiva172 { height: 640px; left: 1120px; bottom: 1375px;}
+ .viiva173 { height: 610px; left: 1100px; bottom: 1385px;}
+
+ .viiva174 { height: 150px; left: 1080px; bottom: 1400px;}
+ .viiva175 { height: 110px; left: 1060px; bottom: 1420px;}
+
+ .viiva176 { height: 300px; left: 1080px; bottom: 1650px;}
+ .viiva177 { height: 250px; left: 1060px; bottom: 1670px;}
+ .viiva178 { height: 205px; left: 1040px; bottom: 1690px;}
+ .viiva179 { height: 160px; left: 1020px; bottom: 1710px;}
+ .viiva180 { height: 100px; left: 1000px; bottom: 1730px;}
+
+ .viiva181 { height: 160px; left: 1160px; bottom: 1100px;}
+ .viiva182 { height: 100px; left: 1140px; bottom: 1130px;}
+
+ .viiva183 { height: 240px; left: 920px; bottom: 2920px;}
+ .viiva184 { height: 190px; left: 900px; bottom: 2950px;}
+ .viiva185 { height: 120px; left: 880px; bottom: 2980px;}
+
+
+.teksti {
+    div {
+        font-family: "Mea Culpa", cursive;
+        font-size: 900;
+        font-style: normal;
+        color: #5ca9f5;
+        scale: 10000%;
+        z-index: 1;
+        opacity: 30%;
+        filter: blur(0.3px);
+    }
+}
+
+ .P {
+    position: absolute;
+    top: 800px;
+    left: 600px;
+}
+
+.E1 {
+    position: absolute;
+    top: 1000px;
+    left: 1500px;
+}
+
+.R {
+    position: absolute;
+    top: 900px;
+    left: 2600px;
+}
+
+.H {
+    position: absolute;
+    top: 2300px;
+    left: 200px;
+}
+
+.O {
+    position: absolute;
+    top: 2100px;
+    left: 1500px;
+}
+
+.S {
+    position: absolute;
+    top: 2100px;
+    left: 2500px;
+}
+
+.E2 {
+    position: absolute;
+    top: 3000px;
+    left: 200px;
+}
+
+
+.F {
+    position: absolute;
+    top: 3000px;
+    left: 1400px;
+}
+
+.E3 {
+    position: absolute;
+    top: 3100px;
+    left: 2500px;
+}
+
+.K {
+    position: absolute;
+    top: 4100px;
+    left: 300px;
+}
+
+.T {
+    position: absolute;
+    top: 4100px;
+    left: 1400px;
+}
+
+.I {
+    position: absolute;
+    top: 4100px;
+    left: 2700px;
+}

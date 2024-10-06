@@ -1,0 +1,317 @@
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  html, body {
+    margin:0;
+    width:fit-content;
+    overflow: hidden;
+  }
+  @page {
+    size: 852mm 1212mm;
+    margin: 0mm;
+  }
+  main {
+    width:846mm;
+    height:1206mm;
+    margin:3mm;
+    position:relative;
+  }
+  .poster-content {
+    width:100%;
+    height:100%;
+  }
+  .cropmark, .cropmark:after {
+    position:absolute;
+    background:black;
+    outline:0.1mm solid white;
+    z-index:10000;
+  }
+  .topleft {
+    width:0.1mm;
+    height: 4mm;
+    top:-3mm;
+    left:3mm;
+  }
+  .topleft::after { 
+    content:'';
+    height:0.1mm;
+    width:4mm;
+    top:6mm;
+    left:-6mm;
+  }
+  .topright {
+    width:0.1mm;
+    height:4mm;
+    top:-3mm;
+    right:3mm;
+  }
+  .topright::after {
+    content:'';
+    height:0.1mm;
+    width:4mm;
+    top:6mm;
+    right:-6mm;
+  }
+  .bottomleft {
+  width:0.1mm;
+  height:4mm;
+  bottom:-3mm;
+  left:3mm;
+  }
+  .bottomleft::after {
+    content:'';
+    height:0.1mm;
+    width:4mm;
+    bottom:6mm;
+    left:-6mm;
+  }
+  .bottomright {
+    width:0.1mm;
+    height:4mm;
+    bottom:-3mm;
+    right:3mm;
+  }
+  .bottomright::after {
+    content:'';
+    height:0.1mm;
+    width:4mm;
+    bottom:6mm;
+    right:-6mm;
+  }
+
+  body {
+    transform-origin:0 0;
+    scale: 0.3; /* POISTA SCALE PAINOVERSIOON TAI KUN HALUAT KATSOA OIKEASSA KOOSSA: */
+  }
+  /* ESIMERKKI: */
+  .aurinko {
+    /* 
+    Voit asemoi elementtejä esim position absolutea käyttäen. 
+    Määritä top (sijainti sivun yläreunasta) tai left (sijainti sivun vasemmasta reunasta) mm tai cm mittoja käyttäen.
+    Voit myös määrittää koon suoraan mm tai cm mittoja käytäen.
+    */
+    position:absolute;
+    top:100mm;
+    left:8cm;
+    width:100mm;
+    height:10cm;
+    background:yellow;
+    border-radius:100%;
+  }
+
+  .background {
+  width:100%;
+  height:100%;
+  background:
+            
+            linear-gradient(240deg, #508c50, rgba(0,255,0,0) 60.71%),
+            linear-gradient(0deg, #5d492f, rgba(0,0,255,0) 60.71%),
+            linear-gradient(170deg, #0a23ba, rgba(0,0,255,0) 60.71%),
+            linear-gradient(90deg, #d29aa7, rgba(255,0,0,0) 60.71%);
+}
+
+.cloud {
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    background-image: linear-gradient(#e7e7e7, white);
+    position:absolute;
+    margin: 30px;
+    bottom: 900px;
+    right: 400px;
+    border-radius: 50%;
+    filter: opacity(50%);
+    filter: blur(10px);
+    scale: 300%;
+}
+
+
+.cloud::before, .cloud::after {
+    content: "";
+    position:absolute;
+    background-color: white;
+    border-radius: 50px;
+    background-image: linear-gradient(#e7e7e7, white);
+}
+
+.cloud::before {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;;
+    top: -30px;
+    left: 40px;
+}
+
+.cloud::after {
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;;
+    top: -10px;
+    left: 200px;
+}
+
+.flower1 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 70%;
+    bottom: 30%;
+    scale: 2.5; /* Original scale set to 200% */
+}
+
+.flower2 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 1000px;
+    top: 900px;
+    scale: 2; /* Original scale set to 200% */
+}
+
+.petal {
+    position: absolute;
+    width: 60px;
+    height: 150px;
+    border-radius: 90%;
+    transform-origin: center 150px;
+    filter: blur(3px);
+    background-image: radial-gradient(closest-corner, #c3e224 5%, #e90707 10% 30%, #f85802 60% 100%);
+    scale: 250%;
+}
+
+.petal1 {
+    transform: rotate(0deg);
+}
+
+.petal2 {
+    transform: rotate(90deg);
+}
+
+.petal3 {
+    transform: rotate(180deg);
+}
+
+.petal4 {
+    transform: rotate(270deg);
+}
+
+.petal5 {
+    transform: rotate(45deg);
+}
+
+.petal6 {
+    transform: rotate(135deg);
+}
+
+.petal7 {
+    transform: rotate(225deg);
+}
+
+.petal8 {
+    transform: rotate(315deg);
+}
+
+.center {
+    width: 25%;
+    height: 25%;
+    background-image: radial-gradient(closest-corner, #c3e224 30%, #f85802 70% 80%);
+    border-radius: 50%;
+    position: relative;
+    filter: blur(3px);
+    top: 90px;
+    right: 30px;
+}
+
+.potato {
+    background-color: black;
+    position: absolute;
+    filter: blur(30px);
+}
+
+.potato1 {
+    height: 1250px;
+    width: 750px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 80%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 55%;
+    rotate: 40deg;
+    bottom: -200px;
+    left: 500px;
+}
+
+.potato2 {
+    height: 1050px;
+    width: 750px;
+    border-top-left-radius: 60%;
+    border-top-right-radius: 80%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 55%;
+    rotate: -10deg;
+    bottom: 1150px;
+    left: 600px;
+}
+
+.potato3 {
+    height: 850px;
+    width: 650px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 80%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 55%;
+    rotate: 210deg;
+    top: 1350px;
+    left: 550px;
+}
+
+.potato4 {
+    height: 650px;
+    width: 450px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 80%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 55%;
+    rotate: 270deg;
+    top: 850px;
+    left: 1300px;
+}
+
+.potato5 {
+    height: 350px;
+    width: 450px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 80%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 55%;
+    rotate: 130deg;
+    top: 870px;
+    left: 1940px;
+}
+
+.potato6 {
+    height: 250px;
+    width: 320px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 60%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 55%;
+    rotate: 240deg;
+    top: 450px;
+    left: 2200px;
+}
+
+.potato7 {
+    height: 150px;
+    width: 200px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 60%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 55%;
+    rotate: 220deg;
+    top: 250px;
+    left: 2000px;
+}
